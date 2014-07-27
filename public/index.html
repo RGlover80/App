@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<base href="/">
 
-	<title>Game WebApp</title>
+	<title>App</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
@@ -24,26 +24,47 @@
 	
 </head>
 <body ng-app="sampleApp">
-<div class="jumbotron">
-<div class="container-fluid">
-
-	<!-- HEADER -->
-
-	<nav class="navbar navbar-default">
-		<div class="navbar-header">
-			<a class="navbar-brand" ui-sref="home">New Games</a>
-		</div>
-
-		<!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE
-		<ul class="nav navbar-nav">
-			<li><a ui-sref="upload">Upload Image</a></li>
-		</ul>
-		-->
+	<!--<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top">
+				<div class=" row col-md-offset-10">
+					<a class="nav navbar-nav" > Test </a>
+				</div>
+				<div class=" row col-md-10 col-md-offset-1">
+				<hr>
+				</div>
+				<div class=" row col-md-3 col-md-offset-5">
+					<a ui-sref="home">Login</a>
+					<a class=""> Change </a>
+				</div>
+		</nav>
+		<br>
+		<br>
+		<nav class="navbar navbar-inverse" role="navigation">
+		</nav>
+		
+	</div> -->
+	<nav class="navbar navbar-inverse" role="navigation">
+	 	<div class="container">
+	 	<div class="row">
+		<ul class="nav navbar-nav pull-right">
+        	<li><a href="#">Link</a></li>
+        	<li><a href="#">Signed</a></li>
+        </ul>
+        </div>
+        <hr class="col-md-12">
+        <div class="row">
+        	<div class="row col-md-6 col-md-offset-3">
+        		<ul class="nav navbar-nav">
+        			<li><a href="#">Link</a></li>
+        			<li><a href="#">Link</a></li>
+        			<li><a href="#">Link</a></li>
+        			<li><a href="#">Link</a></li>
+        		</ul>
+        	</div>
+        </div>
+        </div>      
 	</nav>
-	<br>
-	<div ui-view></div>
 
-</div>
-</div>
+	<div ui-view></div>
 </body>
 </html>
